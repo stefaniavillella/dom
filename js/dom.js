@@ -42,22 +42,24 @@ let contenedor = document.querySelector("#contenedor")
 
 
 
-// GENERO SALUDO ALEATORIO
+// CAMBIO CONTENIDO DE ELEMENTO HTML
 
 let saludar = document.getElementById("saludo");
 console.log( saludo.innerText );
 
-
-// cambio el contenido del elemento
 saludo.innerText = "Hola gente";
 console.log( saludo.innerText );
 
 
+// GENERO SALUDO ALEATORIO
+
 const saludoAleatorio = [
-    { palabra1: "Hola comunidad"},
-    { palabra2: "Hola gente"},
-    { palabra3: "Bienvenidos"},
-
+   "Hola comunidad",
+   "Hola gente",
+   "Bienvenidos"
 ]
+saludo.innerText = saludoAleatorio[random(0,2)];
 
-console.log (Math.random() * saludoAleatorio);
+function random (min,max) {
+    return Math.floor((Math.random() * (max - min + 1)) + min);
+}
