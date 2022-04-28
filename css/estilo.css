@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+header{
+	padding-left: 100px;
+	padding-top: 50px;
+}
+
+body{
+	padding-left: 100px;
+	padding-top: 50px;
+}
+
+h1{
+    padding: 50px;
+	padding-left: 100px;
+}
+
+h2{
+	padding-bottom: 15px;
+}
